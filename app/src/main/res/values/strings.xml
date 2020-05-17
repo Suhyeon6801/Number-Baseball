@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Number Baseball</string>
+    <string name="app_name">숫자야구⚾</string>
+
+    <string name="rule_text">
+        0-9까지 숫자 중 서로 다른 4개의 숫자를 맞추는 게임입니다.
+        \n\n
+        볼(B)
+        \n
+        입력 한 숫자 중\n
+        스트라이크(S)
+        \n
+        아웃(O)
+        \n
+        \n
+        \n
+    </string>
+    <string name="rule_ex">
+        예시\n\n
+        3B 1S
+        \n
+        3개의 숫자가 포함되어있고 1개의 숫자는 위치까지 동일하다.
+    </string>
 </resources>

@@ -11,8 +11,8 @@
         android:layout_marginTop="5dp">
 
         <ImageView
-            android:layout_width="250dp"
-            android:layout_height="200dp"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:src="@drawable/baseball"/>
@@ -29,7 +29,19 @@
             android:textStyle="bold"/>
 
         <Button
-            android:layout_width="250dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Help"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/helpButton"/>
+
+        <Button
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
@@ -41,7 +53,7 @@
             android:id="@+id/startButton"/>
 
         <Button
-            android:layout_width="250dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/colorSemiDark"
