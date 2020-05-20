@@ -13,54 +13,79 @@
         android:orientation="vertical"
         android:layout_marginTop="5dp">
 
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/baseball"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="Your Answer"
-            android:textColor="@color/colorPrimaryDark"
+            android:text="숫자야구"
             android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:gravity="center">
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Help"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/helpButton"/>
 
-            <EditText
-                android:id="@+id/YourAnswer"
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Game Start"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/startButton"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorSemiDark"
+            android:text="Game End"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/endButton"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginRight="20dp"
-                android:hint="0000"
-                android:textSize="30dp"
-                android:inputType=""
-                android:background="@color/colorBackground"
-                android:padding="10dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:textColorHint="@color/colorPrimaryDark"/>
-
-            <Button
-                android:id="@+id/gameButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_help_black_24dp"
+                android:drawableLeft="@drawable/ic_help_black_24dp"
+                android:text="어플리케이션 정보"
+                android:textSize="15dp"
                 android:gravity="center"
-                android:text="Game"
-                android:textSize="20dp"
-                android:textColor="#FFFFFF"
-                android:background="@color/colorPrimary"/>
+                android:id="@+id/information"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
 
 
     </LinearLayout>
