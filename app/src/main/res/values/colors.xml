@@ -5,4 +5,5 @@
     <color name="colorPrimaryDark">#080726</color>
     <color name="colorSemiDark">#9A98A6</color>
     <color name="colorAccent">#F21628</color>
+    <color name="colorPrimarySemi">#F2B6B6</color>
 </resources>

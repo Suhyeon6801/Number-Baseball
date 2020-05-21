@@ -18,6 +18,8 @@
         </activity>
         <!--도움말 액티비티-->
         <activity android:name=".HelpActivity"></activity>
+        <!--게임 액티비티-->
+        <activity android:name=".PlayActivity"></activity>
     </application>
 
 </manifest>
