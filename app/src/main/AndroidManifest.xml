@@ -20,6 +20,9 @@
         <activity android:name=".HelpActivity"></activity>
         <!--게임 액티비티-->
         <activity android:name=".PlayActivity"></activity>
+        <!--성공 액티비티-->
+        <activity android:name=".Sample"></activity>
+        <activity android:name=".Konfetti"></activity>
     </application>
 
 </manifest>

@@ -55,17 +55,6 @@
             android:textStyle="bold"
             android:id="@+id/startButton"/>
 
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@color/colorSemiDark"
-            android:text="Game End"
-            android:textColor="#FFFFFF"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:id="@+id/endButton"/>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

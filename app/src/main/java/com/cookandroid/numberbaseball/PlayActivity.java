@@ -3,13 +3,17 @@ package com.cookandroid.numberbaseball;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +56,13 @@ public class PlayActivity extends AppCompatActivity {
                             Toast.makeText(context,"정답!!",Toast.LENGTH_SHORT).show();
                             isAnswer=true;
                         }
+                        //나중에 cnt가 초과 되면 해골 띄우기!!
                         break;
+                }
+
+                if(isAnswer) {
+                    startActivity(new Intent(PlayActivity.this, Sample.class));
+                    isAnswer=false;
                 }
             }
         });

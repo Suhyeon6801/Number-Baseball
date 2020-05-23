@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button helpButton = (Button)findViewById(R.id.helpButton);
         Button startButton = (Button)findViewById(R.id.startButton);
-        //Button endButton = (Button)findViewById(R.id.endButton);
 
         helpButton.setOnClickListener(new View.OnClickListener() {
             @Override
