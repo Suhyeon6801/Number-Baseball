@@ -20,7 +20,39 @@
         android:padding="5dp"
         android:layout_gravity="center"/>
 
+    <!--cnt값 보여주자!-->
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/cntTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Count is "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorSemiDark"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/cntView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorSemiDark"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -28,9 +60,9 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/fuck" />
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:src="@drawable/great" />
 
     </LinearLayout>
 
@@ -43,7 +75,7 @@
 
 
         <Button
-            android:id="@+id/againButton"
+            android:id="@+id/restartButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center|start"
@@ -56,7 +88,7 @@
             android:background="@color/colorPrimary"/>
 
         <Button
-            android:id="@+id/endButton"
+            android:id="@+id/exitButton"
             android:padding="10dp"
             android:gravity="center|end"
             android:layout_width="wrap_content"

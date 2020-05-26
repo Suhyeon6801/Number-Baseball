@@ -26,7 +26,7 @@ public class Play {//숫자야구 로직, 맞출 랜덤수 생성하기.
         int strike=0, ball=0;
         Map<Integer,Integer> answerMap=new LinkedHashMap<Integer, Integer>();
         String result="";
-        ans=1234;
+        //ans=1234;//테스트용 맨날 답 맞추기 너무 귀차너...
 
         //정답
         answerMap.put(0,(ans/1000));

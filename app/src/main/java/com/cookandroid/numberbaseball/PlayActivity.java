@@ -1,5 +1,6 @@
 package com.cookandroid.numberbaseball;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -12,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -19,6 +21,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlayActivity extends AppCompatActivity {
+
+   // private CustomDialog dialog;
 
     private int radomNum=0;
     private int cnt=0;
@@ -53,20 +57,26 @@ public class PlayActivity extends AppCompatActivity {
                         playerAnswerAdpater.notifyDataSetChanged();
 
                         if(isAnswer){
-                            Toast.makeText(context,"정답!!",Toast.LENGTH_SHORT).show();
+                            //Dialog();
+                            //mSuccessDialog = new SuccessDialog(this);
+                            Toast.makeText(context,"정답!! 입력 횟수는 "+cnt ,Toast.LENGTH_SHORT).show();
                             isAnswer=true;
                         }
-                        //나중에 cnt가 초과 되면 해골 띄우기!!
                         break;
                 }
 
                 if(isAnswer) {
-                    startActivity(new Intent(PlayActivity.this, Sample.class));
+                    //startActivity(new Intent(PlayActivity.this, Sample.class));
+                    Intent retintent = new Intent(PlayActivity.this, Sample.class);
+                    String temp = String.valueOf(cnt);
+                    retintent.putExtra("COUNT",temp);
+                    startActivity(retintent);
                     isAnswer=false;
                 }
             }
         });
     }
+
 
     private int makeRandomNum(Context context)
     {
@@ -95,7 +105,7 @@ public class PlayActivity extends AppCompatActivity {
                 ansList.setPlayerResult("정답");
                 isAnswer=true;
             }
-            playerAnswerList.add(ansList);
+            playerAnswerList.add(0,ansList);//입력한게 맨 위로 가자!
         }
 
         return playerAnswerList;

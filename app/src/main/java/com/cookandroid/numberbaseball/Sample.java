@@ -9,6 +9,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Sample extends AppCompatActivity {//게임 성공시
     @Override
@@ -17,13 +18,20 @@ public class Sample extends AppCompatActivity {//게임 성공시
         setContentView(R.layout.activity_sample);
 
         ImageView image = (ImageView)findViewById(R.id.imageView);
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.scale);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.shake);
         image.startAnimation(animation);
 
-        Button againButton = (Button)findViewById(R.id.againButton);
-        Button endButton = (Button)findViewById(R.id.endButton);
+        TextView cntView = (TextView)findViewById(R.id.cntView);
 
-        againButton.setOnClickListener(new View.OnClickListener() {
+        Intent intent = getIntent();//데이터 수신
+
+        String PlayerCount =intent.getExtras().getString("COUNT");
+        cntView.setText(PlayerCount);
+
+        Button restartButton = (Button)findViewById(R.id.restartButton);
+        Button exitButton = (Button)findViewById(R.id.exitButton);
+
+        restartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent playIntent = new Intent(getApplicationContext(), PlayActivity.class);
@@ -31,7 +39,7 @@ public class Sample extends AppCompatActivity {//게임 성공시
             }
         });
 
-        endButton.setOnClickListener(new View.OnClickListener() {
+        exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {//새 액티비티가 띄워져 있을 때, 새 액티비티 뿐 아니라 루트 액티비티까지 같이 종료
                 finishAffinity();
