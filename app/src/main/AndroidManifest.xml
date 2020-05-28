@@ -21,10 +21,8 @@
         <!--게임 액티비티-->
         <activity android:name=".PlayActivity"></activity>
         <!--성공 액티비티-->
-        <activity android:name=".Sample"></activity>
+        <activity android:name=".SuccessActivity"></activity>
         <activity android:name=".Konfetti"></activity>
-        <!--게임 난이도 선택-->
-
     </application>
 
 </manifest>

@@ -42,7 +42,7 @@ public class Play {//숫자야구 로직, 맞출 랜덤수 생성하기.
 
         if(strike==4) {//여기 나중에 애니메이션 같은거 넣을 거임.
             isAnswer = true;
-            Toast.makeText(context, "정답입니다.", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "정답입니다.", Toast.LENGTH_SHORT).show();
         }
         else
         {
@@ -74,18 +74,18 @@ public class Play {//숫자야구 로직, 맞출 랜덤수 생성하기.
         try{
             num=Integer.parseInt(str);
         }catch (NumberFormatException e){
-            Toast.makeText(context,"숫자가 아닙니다!!",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context,"숫자가 아닙니다!!",Toast.LENGTH_SHORT).show();
             return -1;
         }
 
         if(num<1000||num>9999)
         {
-            Toast.makeText(context,"서로 다른 4자리 수를 입력하세요.",Toast.LENGTH_SHORT).show();
-            return -1;
+            //Toast.makeText(context,"서로 다른 4자리 수를 입력하세요.",Toast.LENGTH_SHORT).show();
+            return -2;
         }
 
         if(!isAllDifferent(num)){
-            return -1;
+            return -3;
         }
 
         return num;
@@ -106,7 +106,7 @@ public class Play {//숫자야구 로직, 맞출 랜덤수 생성하기.
                 {
                     if(playerMap.get(i)==playerMap.get(j))
                     {
-                        Toast.makeText(context,"서로 다른 네 수를 입력하세요.", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(context,"서로 다른 네 수를 입력하세요.", Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 }

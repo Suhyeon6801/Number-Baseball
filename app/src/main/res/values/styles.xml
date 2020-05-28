@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="MyCustomDialogStyle" parent="@android:style/Theme.DeviceDefault.Dialog.NoActionBar.MinWidth">
+
+        <item name="android:fontFamily">@font/little_prince</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColorPrimary">#1f3458</item>
+        <item name="android:textColor">#8089ca</item>
+
+    </style>
+
 </resources>
